@@ -27,5 +27,8 @@ if __name__ == "__main__":
 
     while not cpu.terminated():
         cpu.run()
+        cpu.eu.flag.print_flags()
+        print(executable.statements_raw[cpu.eu.read_register("IP")])
+        input()
 
     print()
